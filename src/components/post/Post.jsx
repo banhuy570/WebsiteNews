@@ -20,7 +20,7 @@ const Post = ({ newsItem }) => {
       <div className="postInfo">
         <div className="postCats">
           <span className="postCat">
-            <Link className="link" to="/posts?cat=Music">
+            <Link className="link" to={`/category/${newsItem.category}`}>
               {newsItem.category}
             </Link>
           </span>

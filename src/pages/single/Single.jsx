@@ -11,7 +11,7 @@ export default function Single() {
   useEffect(() => {
     const newsApi = async () => {
       try {
-        const baseURL = `http://blogapiv1dnt.herokuapp.com/api/v1/posts/${params.id}`;
+        const baseURL = `https://blogapiv1dnt.herokuapp.com/api/v1/posts/${params.id}`;
         const news = await axios.get(baseURL);
         setPost(news.data.data);
       } catch (error) {

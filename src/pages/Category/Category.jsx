@@ -19,7 +19,7 @@ export default function Homepage() {
   useEffect(() => {
       const newsApi = async () => {
     try {
-      const baseURL = `http://blogapiv1dnt.herokuapp.com/api/v1/posts`;
+      const baseURL = `https://blogapiv1dnt.herokuapp.com/api/v1/posts`;
       const news = await axios.get(baseURL);
       setNewsArray(news.data.data);
       setNewsResults(news.data.data);

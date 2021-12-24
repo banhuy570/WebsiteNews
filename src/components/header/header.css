@@ -3,6 +3,7 @@
 }
 
 .headerTitles {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,19 +14,25 @@
 .headerTitleSm {
   position: absolute;
   top: 18%;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .headerTitleLg {
   position: absolute;
   top: 20%;
-  font-size: 100px;
-  color: white;
+  font-size: 4rem;
+  color: red; 
+  
 }
 
 .headerImg {
-  width: 100%;
+  width: -webkit-fill-available;
   height: 450px;
   margin-top: 80px;
   object-fit: cover;
+}
+@media only screen and (max-width: 768px) {
+  .headerImg {
+    height: auto;
+}
 }

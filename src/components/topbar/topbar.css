@@ -20,12 +20,7 @@
 .topLeft img{
   width:100px;
 }
-.topIcon {
-  font-size: 20px;
-  margin-right: 10px;
-  color: #444;
-  cursor: pointer;
-}
+
 
 .topCenter {
   flex: 6;
@@ -41,13 +36,16 @@
 
 .topListItem {
   margin-right: 20px;
-  font-size: 18px;
+  font-size: 1rem;
+    /* font-weight: bold;   */
   font-weight: 300;
   cursor: pointer;
 }
 
 .topListItem:hover{
     color: gray;
+    font-weight: bold;  
+
 }
 
 .topImg {
@@ -63,4 +61,7 @@
   font-size: 18px;
   color: #666;
   cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+ 
 }

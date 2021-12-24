@@ -1,13 +1,16 @@
 .home {
   display: flex;
+  flex-wrap: wrap;
 }
 .searchNews {
-  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
+/* Post{
+  width: 100%;
+} */
 .search {
   /* border: 1px solid; */
   border-radius: 10px;

@@ -1,0 +1,54 @@
+footer {
+  width: 100%;
+}
+.footer {
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.footer-end {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.name {
+  font-size: 20px;
+  padding: 20px 30px 15px;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+.iconContainer {
+  width: 60%;
+  height: 50px;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-left-pane {
+  text-align: center;
+  padding-top: 2rem;
+}
+.right img {
+  width: 160px;
+}
+.copy-text{ text-align: center;}
+.copy-text span span {
+  color: #cfcfcf; 
+ 
+}
+.copy-text .span-3 {
+  font-size: 12px;
+}
+.tnc {
+  color: #fff;
+}

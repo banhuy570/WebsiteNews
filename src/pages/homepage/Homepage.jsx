@@ -1,6 +1,8 @@
 import Header from "../../components/header/Header";
 import Posts from "../../components/posts/Posts";
 import Sidebar from "../../components/sidebar/Sidebar";
+import Footer from "../../components/footer/Footer";
+
 import "./homepage.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -9,7 +11,6 @@ export default function Homepage() {
   const [newsResults, setNewsResults] = useState();
   const [loadMore, setLoadMore] = useState(10);
   const [searchTitle, setSearchTitle] = useState("");
-
 
   const newsApi = async () => {
     try {
@@ -34,19 +35,18 @@ export default function Homepage() {
 
   return (
     <>
-      <Header></Header> 
+      <Header></Header>
       <div className="searchNews">
-       <input
+        <input
           className="search"
           type="text"
           value={searchTitle}
           placeholder="Search News..."
-          onChange={(e) => setSearchTitle(e.target.value)}         
-        />        
-        <i className="topSearchIcon fas fa-search" ></i>
-        </div>
+          onChange={(e) => setSearchTitle(e.target.value)}
+        />
+        <i className="topSearchIcon fas fa-search"></i>
+      </div>
       <div className="home">
-
         <Posts
           newsArray={search(newsArray)}
           newsResults={newsResults}
@@ -54,7 +54,8 @@ export default function Homepage() {
           setLoadMore={setLoadMore}
         />
         <Sidebar />
-      </div>
+      </div>{" "}
+      <Footer></Footer>
     </>
   );
 }

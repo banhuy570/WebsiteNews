@@ -1,12 +1,12 @@
 .home {
   display: flex;
 }
-.searchNews{
+.searchNews {
   width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top:20px;
+  margin-top: 20px;
 }
 .search {
   /* border: 1px solid; */

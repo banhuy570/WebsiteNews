@@ -1,5 +1,7 @@
 import Sidebar from "../../components/sidebar/Sidebar";
 import SinglePost from "../../components/singlePost/SinglePost";
+import Footer from "../../components/footer/Footer";
+
 import "./single.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -22,11 +24,13 @@ export default function Single() {
     // eslint-disable-next-line
   }, []);
 
- 
   return (
-    <div className="single">
-      <SinglePost newsItem={post} />
-      <Sidebar />
-    </div>
+    <>
+      <div className="single">
+        <SinglePost newsItem={post} />
+        <Sidebar />
+      </div>
+      <Footer></Footer>
+    </>
   );
 }
